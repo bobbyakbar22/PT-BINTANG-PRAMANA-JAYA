@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Website resmi PT. Bintang Pramana Jaya — perdagangan, distribusi, logistik, dan layanan bisnis.">
+<meta name="theme-color" content="#0a2342">
+<title>PT. Bintang Pramana Jaya | Situs Resmi</title>
+<style>
+:root{--navy:#0a2342;--navy2:#123b63;--gold:#d9b35b;--ink:#17283b;--muted:#647386;--paper:#f4f7fb;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Inter,Arial,Helvetica,sans-serif;line-height:1.65;background:#fff}
+a{color:inherit}.topline{height:4px;background:linear-gradient(90deg,var(--gold),#f4df9b,var(--gold))}
+header{position:sticky;top:0;z-index:10;background:rgba(10,35,66,.97);color:#fff;padding:14px max(5%,calc((100% - 1180px)/2));display:flex;align-items:center;justify-content:space-between;gap:22px;box-shadow:0 8px 24px #06172a22}
+.brand{display:flex;align-items:center;gap:13px;min-width:260px}.brand img{width:48px;height:48px;object-fit:contain;background:#fff;border-radius:50%;padding:4px}.brandname{font-size:.95rem;font-weight:800;letter-spacing:.06em;line-height:1.3}.brand small{display:block;color:#e8d49d;font-size:.75rem;font-weight:500;letter-spacing:.12em;margin-top:4px}
+nav{display:flex;gap:22px;flex-wrap:wrap}nav a{text-decoration:none;color:#edf2f8;font-size:.9rem}nav a:hover{color:var(--gold)}
+.hero{background:radial-gradient(circle at 80% 15%,#23547b 0,transparent 35%),linear-gradient(120deg,#081d37,#0d3156 65%,#16456b);color:#fff;padding:100px max(5%,calc((100% - 1180px)/2)) 90px;position:relative;overflow:hidden}
+.hero:after{content:"BPJ";position:absolute;right:3%;bottom:-75px;font-size:clamp(9rem,22vw,21rem);font-weight:900;color:#ffffff08;letter-spacing:-.08em;pointer-events:none}
+.kicker{color:#f0d58d;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700}
+h1{font-size:clamp(2.7rem,6vw,5.2rem);line-height:1.04;letter-spacing:-.04em;max-width:850px;margin:20px 0 22px}
+.hero p{max-width:720px;font-size:1.12rem;color:#dbe6f0}.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-block;padding:12px 19px;border-radius:5px;text-decoration:none;font-weight:700;font-size:.92rem}.btn-gold{background:var(--gold);color:#10243a}.btn-outline{border:1px solid #aabdd0;color:#fff}
+.wrap{max-width:1180px;margin:auto;padding:76px 5%}.soft{background:var(--paper)}.section-kicker{color:#a47a24;text-transform:uppercase;font-size:.75rem;letter-spacing:.18em;font-weight:800}
+h2{font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.15;letter-spacing:-.03em;color:var(--navy);margin:10px 0 18px}
+.intro{max-width:820px;color:var(--muted);font-size:1.04rem}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:30px}
+.card{background:#fff;border:1px solid #e1e8f0;border-radius:10px;padding:25px;box-shadow:0 10px 28px #0a234208}.card .num{color:#b38a35;font-weight:800;letter-spacing:.1em;font-size:.8rem}.card h3{margin:9px 0;color:var(--navy);font-size:1.1rem}.card p{color:var(--muted);margin:0;font-size:.94rem}
+.values{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:28px}.valuebox{border-left:3px solid var(--gold);padding:3px 0 3px 22px}.valuebox h3{margin:0 0 8px;color:var(--navy)}.valuebox p{margin:0;color:var(--muted)}
+.tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}.tag{padding:8px 13px;border:1px solid #d7e1eb;border-radius:5px;color:#244563;background:#fff;font-size:.9rem}
+.legal{background:#fff;border:1px solid #dfe7ef;border-radius:12px;padding:26px;margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:20px}.legalitem small{display:block;text-transform:uppercase;color:var(--muted);letter-spacing:.12em;font-size:.72rem;font-weight:700}.legalitem strong{display:block;color:var(--navy);margin-top:5px;overflow-wrap:anywhere}
+.contact{background:var(--navy);color:#fff}.contact h2{color:#fff}.contact .intro{color:#d2deea}.contactgrid{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:28px}.contactcard{border-top:1px solid #47627e;padding-top:18px}.contactcard small{color:#e8d49d;text-transform:uppercase;letter-spacing:.14em}.contactcard p{margin:8px 0;color:#f1f5f9}.contactcard a{color:#f0d58d}
+footer{background:#06172a;color:#bdcad8;padding:22px 5%;font-size:.84rem}.footerinner{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:760px){header{position:static;align-items:flex-start;flex-direction:column;padding:14px 5%}.brand{min-width:0}nav{gap:14px}.hero{padding-top:68px;padding-bottom:65px}.wrap{padding-top:54px;padding-bottom:54px}.values,.legal,.contactgrid{grid-template-columns:1fr}}
+
+.purpose-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:30px}
+.purpose{padding:30px;border-radius:12px;background:#fff;border:1px solid #e0e7ef;box-shadow:0 12px 32px #0a23420a}
+.purpose h3{font-size:1.35rem;color:var(--navy);margin:0 0 12px}
+.purpose p{color:var(--muted);margin:0}
+.mission-list{padding-left:20px;margin:12px 0 0;color:var(--muted)}
+.mission-list li{padding:0 0 10px 5px}
+.value-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:15px;margin-top:28px}
+.value-card{padding:21px;background:#fff;border:1px solid #e1e8f0;border-radius:9px}
+.value-card b{display:block;color:var(--navy);margin:0 0 7px}
+.value-card p{font-size:.92rem;color:var(--muted);margin:0}
+.commit-list{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:25px}
+.commit{padding:18px 20px;border-left:3px solid var(--gold);background:#fff;border-radius:0 8px 8px 0}
+.commit b{display:block;color:var(--navy);margin-bottom:5px}
+.commit p{margin:0;color:var(--muted);font-size:.93rem}
+@media(max-width:760px){.purpose-grid,.commit-list{grid-template-columns:1fr}}
+
+</style></head>
+<body><div class="topline"></div>
+<header>
+ <a class="brand" href="#beranda" style="text-decoration:none">
+  <img src="assets/bpj-logo.png" alt="Logo PT Bintang Pramana Jaya" onerror="this.style.display='none'">
+  <span class="brandname">PT. BINTANG PRAMANA JAYA<small>SITUS RESMI PERUSAHAAN</small></span>
+ </a>
+ <nav><a href="#tentang">Tentang Kami</a><a href="#usaha">Bidang Usaha</a><a href="#komitmen">Komitmen</a><a href="#legalitas">Legalitas</a><a href="#kontak">Kontak</a></nav>
+</header>
+<main>
+<section class="hero" id="beranda">
+ <div class="kicker">Integritas • Profesionalisme • Kemitraan</div>
+ <h1>Mitra bisnis untuk peluang yang terus berkembang.</h1>
+ <p>PT. Bintang Pramana Jaya menjalankan kegiatan usaha dengan semangat profesional, pelayanan yang dapat diandalkan, dan kemitraan jangka panjang. Kami berkomitmen membangun hubungan usaha yang transparan dan saling menguntungkan.</p>
+ <div class="hero-actions"><a class="btn btn-gold" href="#kontak">Hubungi Perusahaan</a><a class="btn btn-outline" href="#usaha">Jelajahi Bidang Usaha</a></div>
+</section>
+<section class="wrap" id="tentang">
+ <div class="section-kicker">Profil Perusahaan</div>
+ <h2>Membangun kepercayaan. Menghubungkan peluang. Menciptakan nilai.</h2>
+ <p class="intro">PT. Bintang Pramana Jaya merupakan Perseroan Perorangan yang berkedudukan di Kabupaten Tanjung Jabung Barat, Provinsi Jambi. Perusahaan mengembangkan kegiatan usaha di bidang perdagangan dan layanan pendukung bisnis dengan mengedepankan integritas, profesionalisme, kualitas layanan, serta kemitraan jangka panjang. Kami berupaya menjadi mitra yang responsif bagi pelanggan, pemasok, pelaku usaha, dan pemangku kepentingan lainnya.</p>
+ <div class="purpose-grid">
+  <article class="purpose"><div class="section-kicker">Visi Perusahaan</div><h3>Menjadi perusahaan perdagangan dan layanan bisnis yang terpercaya, kompetitif, dan berkelanjutan.</h3><p>PT. Bintang Pramana Jaya bercita-cita membangun usaha yang memiliki reputasi baik, mampu beradaptasi terhadap perkembangan pasar, memperluas jaringan kemitraan, serta memberikan nilai tambah bagi pelanggan, mitra usaha, masyarakat, dan perusahaan secara berkelanjutan.</p></article>
+  <article class="purpose"><div class="section-kicker">Misi Perusahaan</div><h3>Menjalankan usaha secara profesional melalui lima komitmen utama.</h3>
+   <ol class="mission-list">
+    <li><b>Memberikan layanan berkualitas.</b> Memahami kebutuhan pelanggan dan menawarkan produk maupun layanan yang sesuai dengan spesifikasi, ketentuan, dan kesepakatan.</li>
+    <li><b>Membangun kemitraan yang kuat.</b> Mengembangkan hubungan yang saling menguntungkan dengan pemasok, pelanggan, distributor, penyedia jasa, dan mitra strategis.</li>
+    <li><b>Mendorong pertumbuhan usaha.</b> Memperluas peluang perdagangan, distribusi, dan jaringan pasar secara terukur, termasuk peluang pasar nasional dan internasional sesuai kesiapan usaha.</li>
+    <li><b>Menjaga integritas dan kepatuhan.</b> Melaksanakan kegiatan usaha dengan jujur, transparan, bertanggung jawab, serta mengikuti ketentuan hukum dan perizinan yang berlaku.</li>
+    <li><b>Meningkatkan efisiensi dan kapabilitas.</b> Mengembangkan proses kerja, pemanfaatan teknologi, pengelolaan risiko, dan kemampuan sumber daya manusia secara berkelanjutan.</li>
+   </ol>
+  </article>
+ </div>
+ <div style="margin-top:48px"><div class="section-kicker">Nilai-Nilai Perusahaan</div><h2>Prinsip yang menjadi dasar setiap keputusan.</h2>
+  <div class="value-grid">
+   <div class="value-card"><b>01. Integritas</b><p>Menjunjung kejujuran, etika, konsistensi, dan komitmen terhadap kesepakatan.</p></div>
+   <div class="value-card"><b>02. Profesionalisme</b><p>Bekerja dengan kompeten, disiplin, terukur, dan berorientasi pada hasil yang berkualitas.</p></div>
+   <div class="value-card"><b>03. Fokus pada Pelanggan</b><p>Mendengarkan kebutuhan pelanggan, memberi informasi yang jelas, dan menindaklanjuti permintaan secara bertanggung jawab.</p></div>
+   <div class="value-card"><b>04. Kolaborasi</b><p>Membangun kerja sama yang terbuka, saling menghargai, dan menciptakan manfaat bersama.</p></div>
+   <div class="value-card"><b>05. Akuntabilitas</b><p>Bertanggung jawab atas keputusan, kualitas pekerjaan, penggunaan sumber daya, dan pemenuhan komitmen.</p></div>
+   <div class="value-card"><b>06. Perbaikan Berkelanjutan</b><p>Terbuka terhadap evaluasi, inovasi, pembelajaran, dan peningkatan cara kerja.</p></div>
+  </div>
+ </div>
+</section>
+<section class="wrap soft" id="usaha">
+ <div class="section-kicker">Bidang Usaha</div><h2>Ruang lingkup layanan dan perdagangan.</h2>
+ <p class="intro">Kegiatan usaha dijalankan sesuai klasifikasi usaha dan perizinan yang dimiliki perusahaan.</p>
+ <div class="grid">
+  <article class="card"><span class="num">01 / PERDAGANGAN</span><h3>Perdagangan Besar</h3><p>Perdagangan dan distribusi produk pangan, hasil pertanian, hasil perikanan, serta komoditas lain sesuai izin usaha.</p></article>
+  <article class="card"><span class="num">02 / PERALATAN</span><h3>Komputer, Mesin & Perlengkapan</h3><p>Perdagangan komputer, perlengkapan kantor, mesin industri, suku cadang, dan peralatan terkait.</p></article>
+  <article class="card"><span class="num">03 / LOGISTIK</span><h3>Angkutan Barang</h3><p>Dukungan transportasi dan pengangkutan barang umum maupun khusus sesuai perizinan yang berlaku.</p></article>
+  <article class="card"><span class="num">04 / JASA PENDUKUNG</span><h3>Administrasi & Perantara</h3><p>Jasa administrasi perkantoran, perdagangan berbasis komisi/kontrak, dan perantara properti sesuai izin.</p></article>
+ </div>
+ <h3 style="color:var(--navy);margin-top:36px">Produk dan komoditas potensial</h3>
+ <div class="tags"><span class="tag">Hasil perikanan</span><span class="tag">Udang ebi</span><span class="tag">Kerupuk udang</span><span class="tag">Kopi, teh & kakao</span><span class="tag">Komoditas pangan pertanian</span><span class="tag">Komputer & perlengkapan kantor</span><span class="tag">Mesin & suku cadang</span></div>
+</section>
+<section class="wrap soft" id="komitmen">
+ <div class="section-kicker">Komitmen Korporasi</div><h2>Standar kerja yang kami upayakan.</h2>
+ <p class="intro">Kami membangun fondasi perusahaan melalui praktik kerja yang bertanggung jawab. Komitmen berikut menjadi arah pengembangan dan dijalankan sesuai skala operasional, kapasitas, serta peraturan yang berlaku.</p>
+ <div class="commit-list">
+  <div class="commit"><b>Tata Kelola dan Kepatuhan</b><p>Menjalankan usaha berdasarkan tanggung jawab yang jelas, pencatatan yang tertib, transparansi transaksi, dan kepatuhan terhadap peraturan serta perizinan.</p></div>
+  <div class="commit"><b>Mutu Produk dan Layanan</b><p>Menetapkan spesifikasi dan ruang lingkup layanan secara jelas serta mengupayakan konsistensi kualitas berdasarkan kesepakatan dengan pelanggan.</p></div>
+  <div class="commit"><b>Manajemen Risiko</b><p>Mempertimbangkan risiko operasional, pemasok, pengiriman, pembayaran, dan perubahan pasar sebelum mengambil keputusan bisnis.</p></div>
+  <div class="commit"><b>Keselamatan dan Lingkungan</b><p>Mendorong praktik kerja yang aman, penggunaan sumber daya secara bijak, dan perhatian terhadap dampak lingkungan yang relevan dengan kegiatan usaha.</p></div>
+  <div class="commit"><b>Pengembangan Kemitraan</b><p>Mengutamakan komunikasi yang terbuka, kesepakatan yang jelas, dan hubungan profesional yang saling menghormati.</p></div>
+  <div class="commit"><b>Kontribusi Ekonomi</b><p>Berupaya membuka peluang kerja sama dengan pelaku usaha dan pemasok lokal serta mendukung pertumbuhan ekonomi melalui aktivitas perdagangan yang bertanggung jawab.</p></div>
+ </div>
+</section>
+<section class="wrap" id="legalitas">
+ <div class="section-kicker">Informasi Perusahaan</div><h2>Legalitas dan identitas.</h2>
+ <p class="intro">Informasi berikut merujuk pada dokumen keputusan perubahan badan hukum yang dilampirkan oleh perusahaan. Untuk kebutuhan uji tuntas, mitra dapat meminta salinan dokumen resmi yang sesuai.</p>
+ <div class="legal">
+  <div class="legalitem"><small>Nama badan usaha</small><strong>PT. BINTANG PRAMANA JAYA</strong></div>
+  <div class="legalitem"><small>Bentuk badan usaha</small><strong>Perseroan Perorangan</strong></div>
+  <div class="legalitem"><small>Nomor keputusan AHU</small><strong>AHU-A015859.AH.01.31.Tahun 2026</strong></div>
+  <div class="legalitem"><small>Tanggal keputusan</small><strong>16 Oktober 2026</strong></div>
+  <div class="legalitem"><small>Kedudukan</small><strong>Kabupaten Tanjung Jabung Barat, Jambi</strong></div>
+  <div class="legalitem"><small>Direktur</small><strong>BOBBY AKBAR PRAMANA, SH</strong></div>
+ </div>
+ <p style="font-size:.85rem;color:var(--muted);margin-top:16px">Catatan: informasi pada bagian ini merupakan ringkasan dokumen yang diberikan dan bukan pengganti pemeriksaan dokumen legalitas lengkap.</p>
+</section>
+<section class="wrap contact" id="kontak">
+ <div class="section-kicker">Hubungi Kami</div><h2>Mari bangun kerja sama.</h2>
+ <p class="intro">Untuk permintaan informasi perusahaan, penawaran produk, atau penjajakan kemitraan, silakan menghubungi kami.</p>
+ <div class="contactgrid">
+  <div class="contactcard"><small>Alamat</small><p><strong>PT. BINTANG PRAMANA JAYA</strong><br>Jl. Merdeka, Tungkal IV Desa, Kuala Tungkal,<br>Kabupaten Tanjung Jabung Barat, Jambi, Indonesia</p></div>
+  <div class="contactcard"><small>Kontak digital</small><p>Email: <a href="mailto:kantor@bintangpramanajaya.com">kantor@bintangpramanajaya.com</a><br>Website: <a href="https://bintangpramanajaya.com">bintangpramanajaya.com</a></p><p style="font-size:.83rem;color:#c5d2df">Email dan domain resmi PT. Bintang Pramana Jaya.</p></div>
+ </div>
+</section>
+</main>
+<footer><div class="footerinner"><span>© 2026 PT. BINTANG PRAMANA JAYA. Hak cipta dilindungi.</span><span>Profesional • Terpercaya • Berorientasi pada kemitraan</span></div></footer>
+</body></html>
